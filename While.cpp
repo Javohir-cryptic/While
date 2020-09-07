@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿//Ввести натуральное число и определить, сколько в нем цифр.
+#include <stdio.h>
 #include <iostream>
 #include <locale.h>
 #pragma warning(disable : 4996)
