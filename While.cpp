@@ -1,20 +1,20 @@
-﻿//Ввести натуральное число и определить, сколько в нем цифр.
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <iostream>
 #include <locale.h>
 #pragma warning(disable : 4996)
 
 int main()
 {
-    int N, count = 0;
+    float S = 0, z = 1, c = 1, d = 2, a = 0.5;
     setlocale(LC_ALL, "Rus");
-    printf("Введите натуралное число: ");
-    scanf("%d", &N);
-    while (N > 0)
+    while (a > 0.001)
     {
-        N /= 10;
-        count++;
+        S = S + a * z;
+        z = -z;
+        c++;
+        d = d * 2;
+        a = c / d;
     }
-    printf("В этом числе %d цифр\n", count);
+    printf("Сумма S = %f", S);
     getchar();
 }
